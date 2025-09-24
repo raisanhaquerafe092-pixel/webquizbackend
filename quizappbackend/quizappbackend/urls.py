@@ -22,4 +22,5 @@ urlpatterns = [
     path('mcq/', include('mcq.urls')),
     path('short/', include('shortquestion.urls')),
     path('long/', include('longquestion.urls')),
+    path('content/', include('chapter.urls')),
 ]

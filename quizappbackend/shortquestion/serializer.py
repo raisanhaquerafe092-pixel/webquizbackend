@@ -4,5 +4,5 @@ from .models import ShortQuestion
 
 class ShortQuestionSerializer(ModelSerializer):
     class Meta:
-        model: ShortQuestion
+        model = ShortQuestion
         fields = '__all__'
