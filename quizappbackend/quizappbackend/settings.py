@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     'mcq',
     'shortquestion',
     'longquestion',
+    'rest_framework',
+
 ]
 
 MIDDLEWARE = [
