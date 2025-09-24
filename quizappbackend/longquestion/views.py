@@ -1,11 +1,10 @@
-from django.shortcuts import render
-from rest_framwork.viewsets import ModelViewSet
+from rest_framework.viewsets import ModelViewSet
 from .models import LongQuestion
-from .serializers import LongQuestionSerializer
+from .serializer import LongQuestionSerializer
 
 
 
 # Create your views here.
 class LongQuestionViewSet(ModelViewSet):
-    queryset = LongQuestion.objects.all(many=True)
+    queryset = LongQuestion.objects.all()
     serializer_class = LongQuestionSerializer

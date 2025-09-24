@@ -1,4 +1,5 @@
-from serializers import ModelSerializer
+from rest_framework.serializers import ModelSerializer
+
 from .models import ShortQuestion
 
 class ShortQuestionSerializer(ModelSerializer):

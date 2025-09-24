@@ -1,10 +1,10 @@
 from django.urls import path , include
 from rest_framework.routers import DefaultRouter
-from .views import McqViewSets
+from .views import McqViewSet
 
 
 router = DefaultRouter()
-router.register(r'question', McqViewSets, basename='mcqviewset')
+router.register(r'question', McqViewSet, basename='mcqviewset')
 
 
 urlpatterns = [

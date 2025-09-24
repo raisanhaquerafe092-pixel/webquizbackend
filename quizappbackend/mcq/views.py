@@ -1,9 +1,9 @@
 from rest_framework.viewsets import ModelViewSet
 from .models import Mcq
-from .serializers import McqSerializer
+from .serializer import McqQuestionSerializer
 
 # Create your views here.
 
 class McqViewSet(ModelViewSet):
-    queryset = Mcq.objects.all(many=True)
-    serializer_class = McqSerializer
+    queryset = Mcq.objects.all()
+    serializer_class = McqQuestionSerializer

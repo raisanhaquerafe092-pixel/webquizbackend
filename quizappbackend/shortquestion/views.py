@@ -1,9 +1,9 @@
 from django.shortcuts import render
 from rest_framework.viewsets import ModelViewSet
 from .models import ShortQuestion
-from .serializers import ShortQuestionSerializer
+from .serializer import ShortQuestionSerializer
 # Create your views here.
 
 class ShortQuestionViewSet(ModelViewSet):
-    queryset = ShortQuestion.objects.all(many=True)
+    queryset = ShortQuestion.objects.all()
     serializer_class = ShortQuestionSerializer
